@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😺😻Gatitos😻😺</title>
+    <!--CSS-->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-image: linear-gradient(120deg, rgba(252, 203, 144, 0.51) 0%, #d57eeb 100%);;
+        }
+        .container{
+            width: 90%;
+            max-width: 1200px;
+            overflow: hidden;
+            margin: auto;
+            padding: 60px 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+        h1, h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+            font-family: "Broadway", sans-serif;
+            text-align: center;
+        } 
+        
+        nav, main, footer {
+            text-align: center;
+            font-weight: 300;
+            color: #764ba2;
+            margin-bottom: 40px;
+            font-size: 40px;
+
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .layout {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid rgba(228, 169, 241, 0.699);
+            background-image: linear-gradient(to top, rgba(235, 192, 253, 0.516) 0%, rgba(217, 222, 216, 0.714) 100%);
+            font-size: 15px;
+            text-align: flex start;
+        }
+
+        .container form {
+            width: 30%;
+            height: 250px;
+            margin: 15px 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-weight: 300;
+            font-size: 2em;
+        }
+
+        .layout img {
+            width: 60%;
+            height: 60%;
+            display: block;
+            align-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: auto;
+
+        }
+
+        .dataForm{
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            font-size: 10px;
+        }
+        
+
+        @media screen and (max-width:300px ) {
+            .layout{
+                width: 75%;
+                margin-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                display: grid;
+                grid-template-rows: 60px auto 80px ;
+                grid-template-columns: auto auto auto;
+                grid-template-areas: 'header header header' 'sidebar main main' 'footer footer footer';
+            }
+            .main {
+                flex-direction: column;
+            }
+            .table{
+                transform: translate(120%);
+            }
+            .container{
+                width: 80%;
+                max-width: 300px;
+                overflow: hidden;
+                margin: auto;
+                padding: 60px 0;
+                display: flex;
+                justify-content: space-evenly;
+                align-content: center;
+                flex-wrap: wrap;
+            }
+            
+        }
+        @media (max-width: 1200px) {
+            .layout {
+                width: 85%;
+                margin-bottom: 40px;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    'header' 
+                    'sidebar' 
+                    'main' 
+                    'footer';
+            }
+
+            .container {
+                width: 87%;
+                max-width: 800px;
+                overflow: hidden;
+                margin: auto;
+                padding: 60px 0;
+                display: flex;
+                justify-content: space-evenly;
+                align-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<!--HTML-->
+<body>
+    <h1>🐱Gatitos😻</h1>
+    <nav>
+        <a href="#" onclick="showContent('home')">Home</a>
+        <a href="#" onclick="showContent('Conocenos')">Quienes Somos</a>
+        <a href="#" onclick="showContent('Adopta')">Adopta</a>
+        <a href="#" onclick="showContent('Contactanos')">Contactanos</a>
+    </nav>
+    <main>
+        <div id="home" class="layout">
+            <h2>Bienvenidos a la Página de Gatitos</h2>
+            <p>Explora las diferentes secciones para conocer más sobre nuestros adorables gatitos.</p>
+            <div class="container">
+                <h2>¿Por qué tener un gato?</h2>
+                <p>
+                    <ul>
+                    <li>Los niños con gatos desarrollan un sistema inmune más tolerantes.</li>
+                    <li>Un 67% de las personas con gatos afirman que sus gatos son un gran apoyo emocional.</li>
+                    <li>Tener un gato ayuda a aliviar el estres y a reducir los malestares psicologicos.</li>
+                    <li>Ver un gato libera grandes antidades de oxitocina.</li>
+                    <li>Un 83% de las familias declara que sus gatos son una compañía constante.</li>
+                    </ul>
+                </p>
+            </div>
+            <div>
+                <h2>20 curiosidades sobre gatos</h2>
+                <ol>
+                    <li>Los gatos tienen 230 huesos, los humanos tienen 206.</li>
+                    <li>Todos los gatos recién nacidos tienen los ojos azules. Tardan varios meses en alcanzar su color definitivo.</li>
+                    <li>Además de con la nariz, los gatos huelen con un órgano, llamado de Jacobson, situado en la parte superior de la boca.</li>
+                    <li>Alcanzan la madurez a los 5 años y su tercera edad sobre los 10 años.</li>
+                    <li>Los gatos tricolores casi siempre son hembras: uno de cada 4.000 gatos tricolor es macho y suele ser estéril. Solo uno de cada 10.000 gatos tricolor es macho y fértil.</li>
+                    <li>Su lengua está formada por diminutos”ganchos”, que utilizan para atrapar y desgarrar el alimento.</li>
+                    <li>Sus bigotes se caen periódicamente y vuelven a crecer. Su desaparición afecta al movimiento y al sentido de orientación del animal. Por eso, no hay que cortarlos.</li>
+                    <li>Los estadounidenses gastan anualmente más dinero en comida para gatos que en comida para bebés.</li>
+                    <li>El gato puede percibir sonidos aproximadamente dos octavos más altos que el hombre.</li>
+                    <li>Tienen la capacidad de saltar una altura 7 veces superior a la suya.</li>
+                    <li>Cuando un gato te lame las manos, la cara o el pelo, debes tomarlo como un gran cumplido: está acicalandote como a uno de los “suyos”.</li>
+                    <li>La forma de saludar de los gatos es rozando su nariz.</li>
+                    <li>Duermen de 16 a 18 horas diarias, pero incluso dormidos, están alerta a cualquier estímulo</li>
+                    <li>El ronroneo no siempre significa tranquilidad. El gato también ronronea cuando está enfermo o asustado, y se dice que lo hace para tranquilizarse a sí mismo.</li>
+                    <li>Los gatos detestan olores como el de la cebolla y el vinagre.</li>
+                    <li>La nariz de cada gato es diferente, como su huella</li>
+                    <li>Los gatos utilizan su característico “miau” para comunicarse con los humanos</li>
+                    <li>Algunos sufren ansiedad por separación</li>
+                    <li>Tienen la capacidad de oler con la boca.</li>
+                    <li>Los gatos expresan su amor con los ojos</li>
+                    <li>Los patrones del pelaje a menudo se asocian con ciertas razas, pero cada gato es único en su apariencia.</li>
+                </ol>
+            </div>
+        </div>
+        <div id="Conocenos" class="layout" style="display: none;">
+            <h2>Somos una familia de gatitos en busqueda de una familia</h2>
+            <div id="imag">
+                <img src="canasta.jpg" alt="gatitos bebé">
+            </div>
+            <h2>Queremos encontrar hogar para todos</h2>
+            <div id="imag">
+                <img src="penita.jpg" alt="penita">
+            </div>
+            <h2>Nos gustaría vivir tan comodamente como Gardfield</h2>
+            <div id="imag">
+                <img src="orangecat.jpg" alt="gato gordo">
+            </div>
+        </div>
+    </div>
+    <div id="Adopta" class="layout" style="display: none;">
+        <div>
+            <h2>Solicitud Adopción</h2>
+           <form id="dataForm">
+               <label for="name">Nombre:</label>
+               <input type="text" id="name" name="name"><br><br>
+               
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email"><br><br>
+
+               <label for="adopt">Cantidad a Adoptar: </label>
+               <input type="number" id="adopt" name="adopt" min="1"><br><br>
+
+               <label for="concentimiento">Acepta ser contactado</label>
+               <input type="checkbox" id="concentimiento"><br><br>
+            
+               <button type="button" id="enviarButton" onclick="saveData()">Eviar Solicitud</button>
+            </form>
+        </div> 
+        <div>
+            <div class= "container">
+                <div id="lista"></div>
+            </div>
+           <button type="button" onclick="downloadJSON()" id="downloadButton" disabled>Descargar Historico</button>
+
+       </div>
+    </div>
+    <div id="Contactanos" class="layout" style=" display: none;">
+        <h2>Contáctanos</h2>
+            <p>Nos puedes encontrar en cada esquina, basurero u hogar con sobrepoblación.</p>
+            <img src="amamediofrio.jpg" alt="gatito mojado">
+    </div>
+    </main>
+    <footer>
+        <div id="imag">
+            <a href="https://www.instagram.com/patitasenlacalle_/" target="_blank">
+                <img src="patita.gif" alt="gatito apretando un boton">
+            </a>
+        </div>
+    </footer>
+                             <!---JS--->
+    <script>
+        
+        function showContent(sectionId) {
+            // Oculta todos los elementos con clase 'layout'
+            var layouts = document.querySelectorAll('.layout');
+            layouts.forEach(function(layout) {
+                layout.style.display = 'none';
+            });
+    
+            // Muestra el elemento con el ID correspondiente
+            var selectedLayout = document.getElementById(sectionId);
+            if (selectedLayout) {
+                selectedLayout.style.display = 'block';
+    
+            }
+        }
+
+        
+        var dataArr = [];
+
+        function saveData(){
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var adopt = document.getElementById('adopt').value;
+            var concentimiento = document.getElementById('concentimiento').checked;
+
+            if (name && email && adopt) {
+                var data = {
+                    name: name,
+                    email: email,
+                    adopt: adopt,
+                    concentimiento: concentimiento
+                };
+            
+                console.log(data);
+                dataArr.push(data);
+                alert("Solicitud enviada")
+                
+                insertarTabla();
+                //Limpia los campos del formulario
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('adopt').value = '';
+                document.getElementById('concentimiento').checked = false;
+
+                //Habilitar el botón de descarga si hay datos guardados
+                var downloadButton = document.getElementById('downloadButton');
+                downloadButton.disabled = false;
+
+            } else {
+                alert('Formulario incompleto');
+            }
+        }
+        
+        function insertarTabla() {
+            var datosTable = '<table>';
+            datosTable = datosTable + '<tr> <th>Ingreso</th> <th>Nombre</th> <th>Email</th> <th>Cantidad</th> <th>Seguimiento</th> <th> </th> </tr>';
+
+            dataArr.forEach((p, index) => {
+                datosTable = datosTable + '<tr>';
+                datosTable = datosTable + '<td>' + Date().toLocaleString() + '</td>'; //Ingresa la fecha y hora exacta
+                datosTable = datosTable + '<td>' + p.name + '</td>'; 
+                datosTable = datosTable + '<td>' + p.email + '</td>';
+                datosTable = datosTable + '<td>' + p.adopt + '</td>';
+                datosTable = datosTable + '<td>' + (p.concentimiento ? 'Sí' : 'No') + '</td>';
+                datosTable = datosTable + '<td><button onclick="editarElemento(' + index + ')">Editar</button> <button onclick="eliminarElemento(' + index + ')">Eliminar</button></td>'; //accede desde el index y lo asocia a este
+                datosTable = datosTable +'</tr>';
+            });
+            
+            datosTable = datosTable + '</table>';
+            document.getElementById('lista').innerHTML=datosTable;
+            enviarButton.textContent = 'Enviar Solicitud';
+        }
+
+        function editarElemento(index) {
+            enviarButton.textContent = 'Guardar';
+            document.getElementById('name').value = dataArr[index].name;
+            document.getElementById('email').value = dataArr[index].email;
+            document.getElementById('adopt').value = dataArr[index].adopt;
+            document.getElementById('saveButton').onclick = function() {
+                insertarTabla(index)
+            };
+        }
+
+        function eliminarElemento(index) {
+            dataArr.splice(index, 1);
+            insertarTabla();
+        }
+
+        function downloadJSON() {
+            var jsonData = JSON.stringify(dataArr);
+            var blob = new Blob([jsonData], {type: 'application/json'});
+            var url = URL.createObjectURL(blob);
+            var link = document.createElement('a');
+            link.href = url;
+            link.download = 'Karens.json';
+            link.click();
+            URL.revokeObjectURL(url);
+            alert("Datos Descargados")
+            
+            // Reiniciar los datos almacenados y deshabilitar el botón de descarga 
+            dataArr = []
+            var downloadButton = document.getElementById('downloadButton');
+            downloadButton.disabled = true;
+            document.getElementById('lista').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
